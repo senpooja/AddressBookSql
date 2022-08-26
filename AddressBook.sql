@@ -63,3 +63,9 @@ where FirstName='Ankita' or FirstName='Ruju'
 update Address_Book_Table
 set AddressBookName='Manager',Type='Profession'
 where FirstName='Seena'
+
+
+------ UC 10: Ability to get number of contact persons by Type------
+select Count(*) as NumberOfContacts,Type
+from Address_Book_Table
+Group by Type
